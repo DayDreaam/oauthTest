@@ -1,0 +1,17 @@
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<h1>main page</h1>
+
+<div sec:authorize="isAuthenticated()">
+    <form th:action="@{/logout}" method="post">
+        <button type="submit">로그아웃</button>
+    </form>
+</div>
+<div sec:authorize="isAnonymous()">
+    <a th:href="@{/login}">로그인</a>
+</div>
+</body>
+</html>
