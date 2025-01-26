@@ -19,7 +19,7 @@ docker run --name my-mysql -e MYSQL_ROOT_PASSWORD=rootpassword -e MYSQL_DATABASE
 ```
 
 밑은 사용 예시입니다.
-터미널에 명령어 (이후로는 docker desktop으로 키셔도 됩니다)
+터미널 명령어 (이후로는 docker desktop으로 키셔도 됩니다)
 ```
 docker run --name my-mysql -e MYSQL_ROOT_PASSWORD=password -p 3306:3306 -d mysql:latest
 ```
@@ -31,3 +31,6 @@ DB_PASSWORD= password
 KAKAO_CLIENT_ID= 카카오 API 키 (발급받아야함)
 ```
 
+카카오 API 키 발급 방법
+https://loosie.tistory.com/302
+6번까지만 따라하시면 됩니다. (검수 진행 X)
